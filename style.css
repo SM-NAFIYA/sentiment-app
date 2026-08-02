@@ -1,0 +1,12 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+#resultLabel {
+    letter-spacing: 0.5px;
+}
