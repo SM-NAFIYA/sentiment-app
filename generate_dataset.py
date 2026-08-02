@@ -11,7 +11,7 @@ templates.
 import csv
 import os
 import random
-os.makedirs("data",exit_ok=True)
+os.makedirs("data",exist_ok=True)
 random.seed(7)
 
 subjects = [
