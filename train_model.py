@@ -6,6 +6,7 @@ Trains three classifiers on data/sentiment_data.csv:
 Compares their accuracy, then saves the best-performing model + the
 TF-IDF vectorizer to model/ so the Flask app can load them instantly.
 """
+import os
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
@@ -14,7 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
-
+os.makedirs("model",exit_ok=True)
 # 1. Load data
 df = pd.read_csv("data/sentiment_data.csv")
 print(f"Loaded {len(df)} rows")
