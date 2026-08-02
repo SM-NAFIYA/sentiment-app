@@ -9,8 +9,9 @@ generalizes to everyday typed text instead of only recognizing rigid
 templates.
 """
 import csv
+import os
 import random
-
+os.makedirs("data",exit_ok=True)
 random.seed(7)
 
 subjects = [
