@@ -15,7 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
-os.makedirs("model",exit_ok=True)
+os.makedirs("model",exist_ok=True)
 # 1. Load data
 df = pd.read_csv("data/sentiment_data.csv")
 print(f"Loaded {len(df)} rows")
